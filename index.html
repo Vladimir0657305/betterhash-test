@@ -67,8 +67,8 @@
             <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target="#main-navigation">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation"
+                            aria-expanded="false">
                             <span class="sr-only">Toggle Navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -76,25 +76,16 @@
                         </button>
                         <div class="title-logo-wrapper"></div>
                     </div>
-                    <div id="main-navigation" class="collapse navbar-collapse">
-                        <ul id="menu-main-menu" class="nav navbar-nav navbar-right">
-                            <li class="menu-item"><a title="Home" href=""><i
-                                        class="_mi _before dashicons dashicons-admin-home" aria-hidden="true"
-                                        style="font-size:1.3em;"></i><span>Home</span></a></li>
-                            <li class="menu-item"><a title="FAQ" href="faq/"><i class="fa fa-question-circle-o"
-                                        aria-hidden="true"></i><span> FAQ</span></a></li>
-                            <li class="menu-item"><a title="Contact" href="#contact"><i
-                                        class="_mi _before dashicons dashicons-email"
-                                        aria-hidden="true"></i><span>Contact</span></a></li>
-                            <li class="btn btn-round btn-rose menu-item"><a title="Download"
-                                    href="https://www.betterhash.net/bh/download/"
-                                    onclick="gtag('event', 'Download', {'event_category': 'Button Click', 'event_label' : 'Header'})"><i
-                                        class="_mi _before dashicons dashicons-download"
-                                        aria-hidden="true"></i><span>Download</span></a></li>
-                            <!-- <li class="menu-item"><a href="https://www.betterhash.net/bh/myaccount/login.php"><i class="fa fa-user-o"></i> Log In</a></li>
+                    <div id="main-navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 0px;">
+                            <ul id="menu-main-menu" class="nav navbar-nav navbar-right">                             
+                                <li class="menu-item"><a title="Home" href=""><i class="_mi _before dashicons dashicons-admin-home" aria-hidden="true" style="font-size:1.3em;"></i><span>Home</span></a></li>
+                                <li class="menu-item"><a title="FAQ" href="faq/"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span> FAQ</span></a></li>
+                                <li class="menu-item"><a title="Contact" href="#contact"><i class="_mi _before dashicons dashicons-email" aria-hidden="true"></i><span>Contact</span></a></li>
+                                <li class="btn btn-round btn-rose menu-item"><a title="Download" href="https://www.betterhash.net/bh/download/" onclick="gtag('event', 'Download', {'event_category': 'Button Click', 'event_label' : 'Header'})"><i class="_mi _before dashicons dashicons-download" aria-hidden="true"></i><span>Download</span></a></li>                               
+                                <!-- <li class="menu-item"><a href="https://www.betterhash.net/bh/myaccount/login.php"><i class="fa fa-user-o"></i> Log In</a></li>
                                 <li class="menu-item"><a href="https://www.betterhash.net/bh/myaccount/login.php?act=register">Register</a></li> -->
-                        </ul>
-                    </div>
+                            </ul>                          
+                        </div>
                 </div>
             </nav>
             <div id="carousel-generic" class="carousel" data-ride="carousel">
